@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href= "main.css">
+    <link rel = "stylesheet" type = "text/css" href= "map.css">
+    <title>용기내_식당찾기</title>
+</head>
+<body>
+    <head>
+        <h1><a href = "mainpage.html">용기내</a></h1>
+        <h3>식당찾기</h3>
+    </head>
+    <nav>
+        <div>
+            <div>
+                <a href = "map.html">주변식당 찾기</a>
+            </div>
+            <div>
+                <a href = "review.html">리뷰 모아보기</a>
+            </div>
+            <div>
+                <a href = "challenge.html">챌린지기록 게시판</a>
+            </div>
+            <div>
+                <a href = "envir.html">환경정보 모아보기</a>
+            </div>
+            <div>
+                <a  href = "mypage.html">마이페이지</a>
+            </div>
+        </div>
+    </nav>
+    <aside>
+        <div class="map_wrap">        
+            <div id="menu_wrap" class="bg_white">
+                <div class="option">
+                    <div>
+                        <form onsubmit="searchPlaces(); return false;">
+                            키워드 : <input type="text" id="keyword" size="15"> 
+                            <button type="submit">검색하기</button> 
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <ul id="placesList"></ul>
+                <div id="pagination"></div>
+            </div>
+        </div>
+    </aside>
+    <content>
+        <div id = "map"></div>
+    </content>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=507fc12f381ed6ac5a1d375d32626cce"></script>
+    <script src = "map.js"></script>
+</body>
+</html>
