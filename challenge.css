@@ -1,34 +1,10 @@
         /* product */
-        div     {display: inline;}
-        h3      {font-size: 20px; text-align: center; margin: 0;}
-
-        aside    { padding: 20px; text-align: center; font-size: 30px;
-                   display: block; flex-flow: column; align-items: stretch;}
-
-        div > div { border:5px solid black; padding: 5px; display: block;}
-        
-        select    { block-size: 30px; font-family: 'Roboto Condensed', arial;}
-
-        input    { block-size: 30px; font-family: 'Roboto Condensed', arial;}
-
-        button    { background-color: white; padding: 5px; border: 1px solid black; 
-                block-size: 30px; font-family: 'Roboto Condensed', arial;}
-
-        button:hover { background-color: rgb(0, 140, 255); color:white}
-
         main     { display: flex; flex-flow: row wrap; flex: 7; }
-
         section { width: 310px; height: 450px; padding: .5em; 
                 border: 3px solid rgb(135, 167, 235);
                 background-color:black; position: relative;
                 flex-flow: column; flex-wrap: nowrap;}
-
         section h2 { z-index: 100; color: white; }
-
         section img  { z-index: 0 ; width: 310px; display: block;  }
-
-        section button    {width: 20px; height: 20x; display: block; background-color: gray;
-                                font-size: 15;}
-
         section p     {color: white; z-index: 200; font-size: 30px; width: 300px; margin: 0px;
                         position: absolute;  text-align: center; }
